@@ -3,6 +3,10 @@ exports = typeof window === 'undefined' ? global : window;
 exports.arraysAnswers = {
   indexOf: function(arr, item) {
 
+    if (Array.prototype.indexOf) { return arr.indexOf(item); }
+
+    return -1;
+
   },
 
   sum: function(arr) {
