@@ -21,6 +21,16 @@ exports.arraysAnswers = {
 
   remove: function(arr, item) {
 
+    var nuevoArray = [];
+
+    for(var i = 0, len = arr.length -1; i <= len; i ++){
+      if(arr[i]!== item){
+        nuevoArray.push(arr[i])
+      }
+
+    } return nuevoArray;
+
+
   },
 
   removeWithoutCopy: function(arr, item) {
